@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import './Loader.scss'
+import { Logo } from '../../assets/assets'
 
 function Loader({ onLoadingComplete }) {
   const [loading, setLoading] = useState(true)
@@ -43,7 +44,7 @@ function Loader({ onLoadingComplete }) {
                 ease: "easeInOut"
               }}
             >
-              .navindu
+              <img src={Logo} alt="Logo" className="loader-logo" />
             </motion.h1>
             <div className="loader-bar">
               <motion.div
