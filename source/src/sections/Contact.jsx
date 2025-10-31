@@ -5,6 +5,7 @@ import emailjs from '@emailjs/browser'
 import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaLinkedin, FaGithub, FaBehance, FaFacebook, FaInstagram, FaPaperPlane, FaWhatsapp } from 'react-icons/fa'
 import { IoMdCheckmarkCircle } from "react-icons/io"
 import { MdError } from "react-icons/md"
+import { Logo } from '../assets/assets'
 
 function Contact() {
   const sectionRef = useRef(null)
@@ -150,19 +151,19 @@ function Contact() {
               <div className="social-links">
                 <h3>Follow Me</h3>
                 <div className="social-icons">
-                  <a href="#" className="social-icon" aria-label="LinkedIn">
+                  <a href="https://www.linkedin.com/in/navindu-ramanayaka-125082303" target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="LinkedIn">
                     <FaLinkedin />
                   </a>
-                  <a href="#" className="social-icon" aria-label="GitHub">
+                  <a href="https://github.com/NavinduR2001" target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="GitHub">
                     <FaGithub />
                   </a>
-                  <a href="#" className="social-icon" aria-label="Behance">
+                  <a href="https://www.behance.net/navinduramanayaka" target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="Behance">
                     <FaBehance />
                   </a>
-                  <a href="#" className="social-icon" aria-label="Facebook">
+                  <a href="https://web.facebook.com/navindu.ramanayaka" target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="Facebook">
                     <FaFacebook />
                   </a>
-                  <a href="#" className="social-icon" aria-label="Instagram">
+                  <a href="https://www.instagram.com/navindu_rama" target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="Instagram">
                     <FaInstagram />
                   </a>
                 </div>
@@ -271,29 +272,25 @@ function Contact() {
         <div className="footer-content">
           <div className="footer-main">
             <div className="footer-brand">
-              <h2>.navindu</h2>
+              <img src={Logo} alt="Logo" />
               <p>Crafting digital experiences with passion and precision</p>
             </div>
 
             <div className="footer-social">
               <h3>Connect With Me</h3>
               <div className="social-icons">
-                <a href="#" aria-label="LinkedIn"><FaLinkedin /></a>
-                <a href="#" aria-label="GitHub"><FaGithub /></a>
-                <a href="#" aria-label="Behance"><FaBehance /></a>
-                <a href="#" aria-label="Facebook"><FaFacebook /></a>
-                <a href="#" aria-label="Instagram"><FaInstagram /></a>
+                <a href="https://www.linkedin.com/in/navindu-ramanayaka-125082303" target="_blank" rel="noopener noreferrer"><FaLinkedin className='s-icon' /></a>
+                              <a href="https://github.com/NavinduR2001" target="_blank" rel="noopener noreferrer"><FaGithub className='s-icon' /></a>
+                              <a href="https://www.behance.net/navinduramanayaka" target="_blank" rel="noopener noreferrer"><FaBehance className='s-icon' /></a>
+                              <a href="https://web.facebook.com/navindu.ramanayaka" target="_blank" rel="noopener noreferrer"><FaFacebook className='s-icon' /></a>
+                              <a href="https://www.instagram.com/navindu_rama" target="_blank" rel="noopener noreferrer"><FaInstagram className='s-icon' /></a>
               </div>
             </div>
           </div>
 
           <div className="footer-bottom">
             <p>&copy; {new Date().getFullYear()} Navindu Ramanayaka. All rights reserved.</p>
-            <div className="footer-bottom-links">
-              <a href="#">Privacy Policy</a>
-              <span>|</span>
-              <a href="#">Terms of Service</a>
-            </div>
+            
           </div>
         </div>
       </footer>

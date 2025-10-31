@@ -213,7 +213,7 @@ function Projects() {
                     <div className="project-actions">
                       <a href={project.github} target="_blank" rel="noopener noreferrer" className="action-btn github">
                         <FaGithub />
-                        <span>GitHub</span>
+                        <span>Code</span>
                       </a>
                       <a 
                         href={project.demo} 

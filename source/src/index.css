@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0c0c1d;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #9F2AFF, #6a00ff);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9F2AFF;
+}
+
+/* Selection color */
+::selection {
+  background: #9F2AFF;
+  color: white;
+}
+
+::-moz-selection {
+  background: #9F2AFF;
+  color: white;
+}

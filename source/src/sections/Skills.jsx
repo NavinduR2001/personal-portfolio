@@ -137,7 +137,7 @@ function Skills() {
             transition={{ duration: 0.6 }}
           >
             <h2 className="services-title">My <span>Skills</span></h2>
-            <p className="services-subtitle">What I can do for you</p>
+            <p className="services-subtitle">My core strengths and the technologies</p>
           </motion.div>
 
           <motion.div 

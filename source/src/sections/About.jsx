@@ -52,7 +52,7 @@ function About() {
             transition={{ type: 'spring', stiffness: 100, duration: 1.2 }}
             className="title"
           >
-            About <span>Me</span>
+            <span>About</span> Me
           </motion.h1>
 
           <motion.p
@@ -72,7 +72,7 @@ function About() {
                 variants={fadeUp}
                 initial="hidden"
                 animate={aboutInView ? 'visible' : 'hidden'}
-                transition={{ type: 'spring', stiffness: 100, duration: 1.0, delay: aboutInView ? 1.3 : 0 }}
+                transition={{ type: 'spring', stiffness: 100, duration: 1.0, delay: aboutInView ? 1 : 0 }}
                 className='ab-me-icon'
               >
                 <FaGraduationCap />
@@ -81,7 +81,7 @@ function About() {
                 variants={fadeRight}
                 initial="hidden"
                 animate={aboutInView ? 'visible' : 'hidden'}
-                transition={{ type: 'spring', stiffness: 100, duration: 1.0, delay: aboutInView ? 1.4 : 0 }}
+                transition={{ type: 'spring', stiffness: 100, duration: 1.0, delay: aboutInView ? 1 : 0 }}
               >
                 Education
               </motion.h1>
@@ -92,16 +92,17 @@ function About() {
                 variants={fadeRight}
                 initial="hidden"
                 animate={aboutInView ? 'visible' : 'hidden'}
-                transition={{ type: 'spring', stiffness: 100, duration: 1.0, delay: aboutInView ? 1.5 : 0 }}
+                transition={{ type: 'spring', stiffness: 100, duration: 1.0, delay: aboutInView ? 1.2 : 0 }}
               >
                 <h3>BSc. (Hons) in Computing & Information Systems</h3>
                 <p>Faculty of Computing, Sabaragamuwa University of Sri Lanka</p>
+                <span>Current GPA : 3.8</span>
               </motion.li>
               <motion.li
                 variants={fadeRight}
                 initial="hidden"
                 animate={aboutInView ? 'visible' : 'hidden'}
-                transition={{ type: 'spring', stiffness: 100, duration: 1.0, delay: aboutInView ? 1.6 : 0 }}
+                transition={{ type: 'spring', stiffness: 100, duration: 1.0, delay: aboutInView ? 1.3 : 0 }}
               >
                 <h3>Advanced Level - Physical Science Stream</h3>
                 <p>H/ Weeraketiya Rajapaksha Central College</p>
@@ -115,7 +116,7 @@ function About() {
                 variants={fadeUp}
                 initial="hidden"
                 animate={aboutInView ? 'visible' : 'hidden'}
-                transition={{ type: 'spring', stiffness: 100, duration: 1.0, delay: aboutInView ? 2.3 : 0 }}
+                transition={{ type: 'spring', stiffness: 100, duration: 1.0, delay: aboutInView ? 1.7 : 0 }}
                 className='ab-me-icon'
               >
                 <MdWork />
@@ -124,7 +125,7 @@ function About() {
                 variants={fadeRight}
                 initial="hidden"
                 animate={aboutInView ? 'visible' : 'hidden'}
-                transition={{ type: 'spring', stiffness: 100, duration: 1.0, delay: aboutInView ? 2.4 : 0 }}
+                transition={{ type: 'spring', stiffness: 100, duration: 1.0, delay: aboutInView ? 1.8 : 0 }}
               >
                 Experiences
               </motion.h1>
@@ -134,12 +135,13 @@ function About() {
               variants={fadeRight}
               initial="hidden"
               animate={aboutInView ? 'visible' : 'hidden'}
-              transition={{ type: 'spring', stiffness: 100, duration: 1.0, delay: aboutInView ? 2.5 : 0 }}
+              transition={{ type: 'spring', stiffness: 100, duration: 1.0, delay: aboutInView ? 1.9 : 0 }}
               className="experience-list"
             >
               <li>
                 <h3>Internship</h3>
-                <p>People's Bank, Weeraketiya Branch | 2022 - 2023</p>
+                <p>People's Bank, Weeraketiya Branch</p>
+                <span>2022 September - 2023 September</span>
               </li>
             </motion.ul>
           </div>

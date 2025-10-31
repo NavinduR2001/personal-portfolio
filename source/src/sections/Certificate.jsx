@@ -175,6 +175,7 @@ function Certificate() {
           {/* Certificates Grid */}
           <div 
             className="certificates-carousel"
+
             onMouseEnter={() => setIsPaused(true)}
             onMouseLeave={() => setIsPaused(false)}
           >
@@ -184,8 +185,8 @@ function Certificate() {
                 className="certificates-grid"
                 variants={staggerContainer}
                 initial="hidden"
-                animate="visible"
-                exit={{ opacity: 0, scale: 0.9 }}
+                animate={certificatesInView ? "visible" : "hidden"}
+                exit="hidden"
                 transition={{ duration: 0.5 }}
               >
                 {getVisibleCertificates().map((cert, index) => (
