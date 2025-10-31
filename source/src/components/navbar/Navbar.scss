@@ -1,0 +1,211 @@
+.navbar{
+        display:grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        justify-items: center;  
+        align-items: center;
+        margin: auto;
+        // max-width: calc(100% - 400px);
+        height: 90px;
+        // background-color: rgba(255, 255, 255, 0.1);
+        margin-top:0px;
+        border-radius: 0px;
+        padding: 0 50px;   
+        backdrop-filter: blur(10px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 20px 50px;
+        background: transparent;
+        z-index: 1000; // Below loader but above content
+        transition: all 0.3s ease;
+        overflow: hidden;
+
+   
+
+    .navbar-logo{
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        
+        img{
+          width: auto;
+          height: 50px;
+        }
+    }
+   
+    .slidebar-container{
+    display:none;
+    position:absolute;
+    top:50px;
+    right:40px;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    padding:20px;
+    width: 120px;
+    height: 160px;
+    z-index: 1001;
+    font-size: 12px;
+
+    .slidebar{
+        list-style-type: none;
+        padding:0;
+        margin:0;
+
+        li{
+            margin-bottom:20px;
+
+            a{
+                text-decoration: none;
+                color: white;
+                font-weight: 600;
+                font-size: 12px;
+                transition: all 0.3s ease;
+            }
+
+            a:hover{
+                color: #9F2AFF;
+                font-size: 13px;
+                font-weight: 700;
+            }
+            
+        }
+    }}
+    .navbar-links{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 70px;
+        font-size: 17px;
+        box-sizing: border-box;
+        
+        a{
+            text-decoration: none;
+            color: white;
+            box-sizing: border-box;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            font-size: 17px;
+
+        }
+
+        a:hover{
+            color: #9F2AFF;
+            font-size: 17px;
+            
+        }
+    }
+     .navbar-links a.active{
+        color: #9F2AFF;
+        font-size: 17px;
+        font-weight: 800;
+    }
+    .contact-button{
+        padding: 10px 20px;
+        border-radius: 5px;
+        background-color: transparent;
+        background: linear-gradient(135deg, #9F2AFF, #6a00ff);
+        font-size: 16px;
+        font-weight: 700;
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+    .contact-button:hover{
+        background: linear-gradient(135deg, #9F2AFF, #6a00ff);
+        color: white;
+        border-color: transparent;
+        box-shadow: 0 0 20px #9F2AFF;
+        
+    }
+    
+    .menu-logo{
+        display:none;
+    }
+
+
+}
+ .navbar::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        border-radius: 20px;
+        background: linear-gradient(135deg,transparent, #7000cc2c, #6a00ff25,transparent);
+        // animation: gradientAnimation 7s linear infinite;
+        // animation-fill-mode: forwards;
+        
+    }
+    // @keyframes gradientAnimation {
+    //     0% {
+    //         left: -100%;
+    //     }
+    //     50% {
+    //         left: 0%;
+    //     }
+    //     100% {
+    //         left: 100%;
+    //     }
+        
+    // }
+    @media screen and (max-width: 768px) {
+        .navbar{
+            grid-template-columns: 1fr 1fr 1fr;
+            padding: 0 20px;
+            height: 50px;
+            max-width: 100%;
+            border-radius: 0;
+            overflow: visible;
+            border-left: none;
+            border-right: none;
+            margin:0;
+
+            .navbar-logo{
+            font-size: 14px;
+        }
+         .navbar-links{
+           display:none;
+    }
+      .menu-logo{
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+        position: relative;
+        left: 20px;
+        transition: all 0.3s ease;
+
+    }
+    .menu-logo:hover{
+        color: #9F2AFF;
+    }
+
+       .slidebar-container{
+            display:none;
+            
+        }
+        
+         .contact-button{
+            padding: 5px 10px;
+            font-size: 10px;
+            position:relative ;
+            left: 70px;
+            font-weight: 600;
+            border: 1px solid #9F2AFF;
+            
+        }
+        .contact-button:hover{
+            font-size: 11px;
+            
+        }
+    }
+
+
+}
