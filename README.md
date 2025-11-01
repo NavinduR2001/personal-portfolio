@@ -2,7 +2,7 @@
 
 A modern, responsive portfolio website built with React and Framer Motion, featuring smooth animations, interactive UI elements, and a beautiful gradient design.
 
-**Portfolio :** [www.navinduramanayaka.me](Navindu Ramanayaka)
+**Portfolio :** [www.navinduramanayaka.me]
 
 ![Portfolio Banner](./source/src/assets/home%20image.png)
 
@@ -207,9 +207,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Your Name**
 
-- GitHub: [@yourusername](https://github.com/yourusername)
-- LinkedIn: [Your LinkedIn](https://linkedin.com/in/yourprofile)
-- Portfolio: [yourportfolio.com](https://yourportfolio.com)
+- GitHub: [@NavinduR2001](https://github.com/NavinduR2001)
+- LinkedIn: [Navindu Ramanayaka](www.linkedin.com/in/navindu-ramanayaka-125082303)
+- Portfolio: [navinduramanayaka.me](www.navinduramanayaka.me)
 - Email: your.email@example.com
 
 ## 🙏 Acknowledgments
