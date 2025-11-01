@@ -1,6 +1,6 @@
 import Profile from './PNG.png';
 import ProfileE from './Edited.png';
-import CV from './Navindu_Ramanayaka_CV.pdf'
+import CV from './Navindu Ramanayaka_CV.pdf'
 import Vehicle from './Vehicle V.jpg';
 import Event from './EventM.jpg';
 import RMS from './RMS.jpg';
