@@ -210,7 +210,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - GitHub: [@NavinduR2001](https://github.com/NavinduR2001)
 - LinkedIn: [Navindu Ramanayaka](www.linkedin.com/in/navindu-ramanayaka-125082303)
 - Portfolio: [navinduramanayaka.me](www.navinduramanayaka.me)
-- Email: your.email@example.com
+- Email: navinduramanayaka@gmail.com
 
 ## 🙏 Acknowledgments
 
