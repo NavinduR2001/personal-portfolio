@@ -2,9 +2,9 @@ import React, { useRef, useState } from 'react'
 import './Portfolio.scss'
 import { motion, scale, useInView } from 'framer-motion'
 import { FaGithub, FaYoutube, FaChevronLeft, FaChevronRight, FaUsers, FaUser } from 'react-icons/fa'
-import { SiReact, SiNodedotjs, SiMongodb, SiExpress, SiJavascript, SiPython, SiDjango, SiWebrtc, SiOpencv, SiTensorflow, SiFirebase, SiAndroidstudio, SiMysql, SiSpringboot, SiCss3, SiLaravel, SiPhp, SiHtml5 } from 'react-icons/si'
+import { SiReact, SiNodedotjs, SiMongodb, SiExpress, SiJavascript, SiPython, SiDjango, SiWebrtc, SiOpencv, SiTensorflow, SiFirebase, SiAndroidstudio, SiMysql, SiSpringboot, SiCss3, SiLaravel, SiPhp, SiHtml5, SiAdobephotoshop, SiAdobeillustrator, SiFigma } from 'react-icons/si'
 import { BiLogoSpringBoot } from "react-icons/bi";
-import { ArtCenter, Event, RMS, Vehicle, WaveWord } from '../assets/assets'
+import { ArtCenter, Event, RMS, UI, Vehicle, WaveWord } from '../assets/assets'
 
 function Projects() {
   const sectionRef = useRef(null)
@@ -55,21 +55,22 @@ function Projects() {
       github: "https://github.com/NavinduR2001/hand-sign-recognize-mobile-app",
       demo: "https://www.linkedin.com/posts/navindu-ramanayaka-125082303_capstoneproject-wavewords-ai-activity-7373358446206758912-8D6G?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE1uRi0BC1cxbyBTVH0kAPmEBlOILvOTAOk"
     },
-    {
+      {
       id: 3,
-      title: "Vehicle Valuation and Analytics Management System",
-      description: "A Web-based Vehicle Valuation and Analytics Management System developed for Rawan Auto Care that automates valuation workflows, financial management and performance analytics.",
-      image: Vehicle,
-      type: "group",
+      title: "UI & UX Designs",
+      description: "A collection of my UI & UX design projects showcasing my skills in creating user-friendly and visually appealing interfaces for web and mobile applications.",
+      image: UI,
+      type: "individual",
       technologies: [
-        { name: "React", icon: <SiReact /> },
-        { name: "Node.js", icon: <SiNodedotjs /> },
-        { name: "MongoDB", icon: <SiMongodb /> },
-        { name: "Express", icon: <SiExpress /> }
+        { name: "Figma", icon: <SiFigma /> },
+        { name: "Photoshop", icon: <SiAdobephotoshop /> },
+        { name: "Illustrator", icon: <SiAdobeillustrator /> },
+        
       ],
-      github: "https://github.com/NavinduR2001/Vehicle-Valuation-and-Analytics-Management-System",
-      demo: "alert('Ongoing Project Demo will be available soon!')"
+      github: "",
+      demo: "https://docs.google.com/document/d/1QRg-IhiWTF_Cm6q3B2CVg5wmJcDWO3MdOumrdhwP5HA/edit?usp=sharing"
     },
+   
     {
       id: 4,
       title: "Event Management System with AI Integration",
@@ -103,6 +104,22 @@ function Projects() {
       github: "https://github.com/Piumalhk/Sabra-Music",
       demo: "https://drive.google.com/file/d/1M5uro7_5Rm7_N-GfySjvRjWU6SC3A71y/view"
     },
+     {
+      id: 6,
+      title: "Vehicle Valuation and Analytics Management System",
+      description: "A Web-based Vehicle Valuation and Analytics Management System developed for Rawan Auto Care that automates valuation workflows, financial management and performance analytics.",
+      image: Vehicle,
+      type: "group",
+      technologies: [
+        { name: "React", icon: <SiReact /> },
+        { name: "Node.js", icon: <SiNodedotjs /> },
+        { name: "MongoDB", icon: <SiMongodb /> },
+        { name: "Express", icon: <SiExpress /> }
+      ],
+      github: "https://github.com/NavinduR2001/Vehicle-Valuation-and-Analytics-Management-System",
+      demo: "alert('Ongoing Project Demo will be available soon!')"
+    }
+  
   ]
 
   const paginate = (newDirection) => {
@@ -210,10 +227,31 @@ function Projects() {
                       ))}
                     </div>
 
+                      {project.id === 3 ? (
+                      <div className="project-actions">
+                        <a 
+                          href={project.demo} 
+                          target="_blank" 
+                          rel="noopener noreferrer" 
+                          className="action-btn demo"
+                        >
+                          <SiFigma />
+                          <span>Figma Designs</span>
+                        </a>
+                      </div>
+
+                      ) : (
                     <div className="project-actions">
-                      <a href={project.github} target="_blank" rel="noopener noreferrer" className="action-btn github">
+                      <a href={project.github} target="_blank" rel="noopener noreferrer" className="action-btn github"
+                      // onClick={(e) => {
+                      //   if (!project.github) {
+                      //     e.preventDefault()
+                      //     alert('Code repository not available for this project!')
+                      //   } 
+                      // }}
+                      >
                         <FaGithub />
-                        <span>Code</span>
+                        <span >Code</span>
                       </a>
                       <a 
                         href={project.demo} 
@@ -225,12 +263,14 @@ function Projects() {
                             e.preventDefault()
                             alert('Ongoing Project! Demo will be available soon!')
                           }
+                          
                         }}
                       >
                         <FaYoutube />
                         <span>Demo</span>
                       </a>
                     </div>
+                      )}
                   </div>
                 </motion.div>
               ))}
